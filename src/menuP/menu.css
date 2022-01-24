@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  width: 1200px;
+  margin: 100px auto;
+}
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.title h4 {
+  text-transform: capitalize;
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.title h4 span {
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.title h4:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #6c63ff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-menu {
+  flex-basis: 590px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.single-menu:nth-child(5),
+.single-menu:nth-child(6) {
+  border-bottom: 0;
+}
+.single-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.single-menu:hover img {
+  border-radius: 0;
+}
+.single-menu img {
+  max-width: 280px;
+
+  border-radius: 50%;
+
+  padding: 3px;
+  transition: 0.5s;
+}
+.single-menu h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  border-bottom: 4px groove #5148ff;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.single-menu h4 span {
+  float: right;
+  color: #6c63ff;
+  font-style: italic;
+}
+.single-menu p {
+  color: black;
+}
+.temoignage-head {
+  text-align: center;
+}
+
+.but {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.but button {
+  display: inline-block;
+  background-color: #6c63ff;
+  font-size: 23px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: 0.5s;
+  border: 1px black;
+  cursor: pointer;
+}
+.button {
+  background-color: #6c63ff;
+  font-size: 23px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 30px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: -5%;
+  transition: 0.5s;
+  border: 1px solid rgb(83, 85, 199);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #1f1b70;
+}
+.check-button {
+  background-color: #2d3fa3;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+
+  margin: 0 auto;
+  display: block;
+
+  width: 20%;
+  border-radius: 7px;
+  transition: 0.5s;
+  border: 1px black;
+  cursor: pointer;
+}
+.add-button {
+  background-color: #2d3fa3;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+
+  float: left;
+
+  width: 50%;
+  border-radius: 7px;
+  transition: 0.5s;
+  border: 1px rgb(30, 39, 170);
+  cursor: pointer;
+}
+.add-button:hover {
+  background-color: #1f1b70;
+}
+.button-acceuil {
+  display: inline-block;
+  background-color: #6c63ff;
+  font-size: 23px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 30px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: 0.5s;
+  border: 1px black;
+  position: relative;
+
+  cursor: pointer;
+}
+.button-check-back {
+  display: inline-block;
+  background-color: #2d3fa3;
+  font-size: 18px;
+  color: white;
+
+  padding: 8px 30px;
+  display: block;
+  margin: 0 auto;
+
+  transition: 0.5s;
+  border: 1px black;
+  position: relative;
+}
+.button-check-back:hover {
+  background-color: #111f6b;
+  cursor: pointer;
+}
+.button-check {
+  display: inline-block;
+  background-color: #2d3fa3;
+  font-size: 18px;
+  color: white;
+  float: right;
+
+  padding: 8px 30px;
+
+  transition: 0.5s;
+  border: 1px black;
+}
+.button-check-back :disabled {
+  background-color: gray;
+}
+.button-check-next {
+  display: inline-block;
+  background-color: #f50057;
+  font-size: 18px;
+  color: white;
+
+  padding: 8px 30px;
+  display: block;
+  margin: 0 auto;
+
+  transition: 0.5s;
+  border: 1px black;
+  position: relative;
+}
+.button-check-next:hover {
+  background-color: #d1084e;
+  cursor: pointer;
+}
+.button-navbar {
+  display: inline-block;
+  background-color: #2d3fa3;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 20px 20px;
+  float: right;
+  color: white;
+
+  transition: 0.5s;
+  border: 1px black;
+  cursor: pointer;
+}
+.but button:hover {
+  background-color: #1f1b70;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 800px;
+    margin: 0px auto;
+  }
+  .button {
+    margin-top: 0%;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 500px;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 698px) {
+  .wrapper {
+    width: 500px;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 520px) {
+  .wrapper {
+    width: 400px;
+    margin: 40px;
+    font-size: 15px;
+  }
+  .single-menu {
+    display: block;
+  }
+  .single-menu img {
+    margin: 0 auto;
+    display: block;
+  }
+  .but button {
+    font-size: 20px;
+  }
+
+  .title h4 {
+    margin-left: 25%;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper {
+    width: 310px;
+  }
+  .single-menu {
+    display: block;
+  }
+  .single-menu img {
+    margin: 0 auto;
+    display: block;
+  }
+  .button {
+    margin-top: -10%;
+  }
+
+  .title h4 {
+    margin-left: 25%;
+  }
+}
+
+/*@media (max-width: 680px) {
+  .wrapper {
+    width: 600px;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 680px) {
+  .title {
+    text-align: center;
+  }
+  .wrapper {
+    width: 550px;
+    margin: 0px;
+  }
+}
+*/
+.tag.green {
+  background-color: #1f1b70;
+  border: 1px #1f1b70;
+}
+.alert {
+  padding: 20px;
+  background-color: #c52e23;
+  border-radius: 50px;
+  width: 100%;
+  color: white;
+}
+
+.alert-success {
+  padding: 20px;
+  width: 80%;
+  background-color: #131b67;
+  border-radius: 50px;
+  color: white;
+  margin: 0 auto;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.acceuil img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 915px) {
+  /*1160px*
+  .acceuil {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 515px) and (max-width: 815px) {
+  /*1160px*/
+  .button-navbar {
+    padding: 11px;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .acceuil {
+    margin-top: 10%;
+  }
+}
+@media (min-width: 415px) and (max-width: 515px) {
+  /*1160px*/
+  .acceuil {
+    margin-top: 15%;
+  }
+  .acceuil img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  /*1160px*/
+  .acceuil {
+    margin-top: 35%;
+  }
+
+  .acceuil img {
+    width: 100%;
+  }
+}

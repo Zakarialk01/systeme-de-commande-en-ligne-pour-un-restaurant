@@ -1,0 +1,53 @@
+{
+  "data": [
+    
+    {
+      "id":"1",
+      "name":"Bûche de Noël à la framboise ",
+      "image":"img/buche.jpg",
+     
+      "price":4   },
+        
+    {
+      "id":"2",
+      "name":"Carpaccio d'ananas exotique",
+      "image":"img/ananas.jpg",
+    
+      "price":5
+    }
+    ,
+        
+    {
+      "id":"3",
+      "name":"Flan pâtissier sans pâte   ",
+      "image":"img/flan.jpg",
+     
+      "price":3
+    }
+    ,    
+    {
+      "id":"4",
+      "name":"Tarte normande",
+      "image":"img/tarte.jpg",
+      
+      "price":5
+    },
+    {
+      "id":"5",
+      "name":"Gâteaux de riz de Marguerite ",
+      "image":"img/riz.jpg",
+     
+      "price":3
+    }
+    ,
+        
+    {
+      "id":"6",
+      "name":"Semoule au lait de coconut ",
+      "image":"img/semoule.jpg",
+     
+      "price":3
+    }
+     
+   
+  ]}

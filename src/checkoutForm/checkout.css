@@ -1,0 +1,133 @@
+.Login input[type="email"],
+.Login input[type="text"] {
+  border: 2px solid #6c63ff;
+  background: rgba(255, 255, 255, 0.1);
+
+  margin: 20px auto;
+  text-align: center;
+
+  padding: 14px 10px;
+  width: 250px;
+  outline: none;
+
+  transition: 0.25s;
+}
+.flex2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Login h1 {
+  text-align: center;
+  color: white;
+}
+.select {
+  transition: 0.25s;
+  border: 2px solid #6c63ff;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  text-align: center;
+  padding: 12px;
+  width: 250px;
+  outline: none;
+  transition: 0.25s;
+}
+option {
+  background-color: #131b67;
+
+  border-radius: none;
+
+  color: white;
+}
+label p {
+  color: red;
+  font-size: 13px;
+}
+label .select {
+  margin-left: 34px;
+}
+
+.bouton {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 150px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.bouton :focus {
+  border-color: #3498db;
+}
+@media screen and (max-width: 540px) {
+  .Login input[type="email"],
+  .Login input[type="text"],
+  .Login input[type="password"] {
+    max-width: 200px;
+    display: block;
+  }
+  .select {
+    max-width: 200px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .Login input[type="email"],
+  .Login input[type="text"],
+  .Login input[type="password"] {
+    max-width: 300px;
+    display: block;
+  }
+  .select {
+    max-width: 300px;
+    display: block;
+  }
+}
+.img {
+  width: 100px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+.ul li {
+  font-size: 15px;
+  color: #14105a;
+  font-weight: 500;
+  margin: 10px;
+}
+.font {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.spann {
+  font-size: 25px;
+  color: #14105a;
+  font-weight: 700;
+  margin: 5px;
+  float: right;
+}
+@media (max-width: 480px) {
+  .Login input[type="email"],
+  .Login input[type="text"] {
+    width: 250px;
+    margin: 5px;
+  }
+  .font {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .select {
+    width: 250px;
+    margin-left: 10px;
+  }
+  label .select {
+    margin-left: 0px;
+  }
+  .flex2 {
+    flex-wrap: wrap;
+  }
+}

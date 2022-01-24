@@ -1,0 +1,256 @@
+.wrapper2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.title h4 {
+  text-transform: capitalize;
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.title h4 span {
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.title h4:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #6c63ff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.menu2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-menu2 {
+  flex-basis: 590px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.single-menu2:nth-child(5),
+.single-menu2:nth-child(6) {
+  border-bottom: 0;
+}
+.single-menu2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.single-menu2:hover img {
+  border-radius: 0;
+}
+.single-menu2 img {
+  max-width: 100px;
+
+  border-radius: 50%;
+
+  padding: 3px;
+  transition: 0.5s;
+}
+.single-menu2 h4 {
+  text-transform: capitalize;
+
+  border-bottom: 4px groove #5148ff;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.single-menu2 h4 span {
+  float: right;
+  color: #6c63ff;
+  font-style: italic;
+}
+.span {
+  float: right;
+  color: white;
+  font-size: 30px;
+}
+.single-menu2 p {
+  color: black;
+  font-size: 1.3rem;
+}
+.remove-button {
+  background-color: #f50057;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+
+  width: 100%;
+  border-radius: 7px;
+  transition: 0.5s;
+  border: 1px black;
+  cursor: pointer;
+}
+.back-to-top {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  bottom: 40px;
+  right: 40px;
+  background-color: #1f1b70;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+
+  z-index: 100;
+}
+.back-to-top:hover {
+  text-decoration: none;
+  color: white;
+}
+.whatsapp-icon {
+  margin-top: 15px;
+}
+.whatsapp-icon:hover {
+  color: white;
+  text-decoration: none;
+}
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.whatsapp_float:hover {
+  text-decoration: none;
+  color: white;
+}
+.whatsapp-icon {
+  margin-top: 15px;
+}
+.whatsapp-icon:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.image {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.emptycart img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.margin {
+  margin: 80px;
+  border: 1px solid rgb(60, 37, 160);
+  background-color: #2d3fa3;
+  border-radius: 30px;
+  box-shadow: 1px -1px 17px 2px #6c63ff;
+  color: white;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  border-bottom: 2px groove #2c2a59;
+  margin-bottom: 2px;
+  padding-bottom: 5px;
+}
+.next-checkout {
+  margin-top: 5%;
+
+  color: white;
+  margin: 50px;
+}
+.next-checkout button {
+  background-color: #152892;
+  font-size: 18px;
+  color: white;
+
+  padding: 8px;
+
+  width: 20%;
+  border-radius: 7px;
+  transition: 0.5s;
+  border: 1px black;
+  cursor: pointer;
+}
+.next-checkout button:hover {
+  background-color: #0d1859;
+}
+@media screen and (max-width: 940px) {
+  .next-checkout {
+    justify-content: space-around;
+    margin-top: 5%;
+    color: white;
+    display: flex;
+    margin: 50px;
+    /* display: block; */
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .next-checkout button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .image-error {
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .margin {
+    margin: 30px;
+  }
+  .cart {
+    display: block;
+    text-align: center;
+    border-bottom: 2px groove #5148ff;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+  }
+  .remove-button {
+    width: 30%;
+  }
+  .next-checkout {
+    display: block;
+  }
+  .span {
+    font-size: 25px;
+  }
+  .next-checkout button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .emptycart img {
+    width: 100%;
+    margin-top: 20%;
+  }
+}
