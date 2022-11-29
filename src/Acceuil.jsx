@@ -11,7 +11,7 @@ function Acceuil() {
       <br />
       <br />
       <footer class="footer">
-        <div class="max-w-screen-xl px-4 pb-8 mx-auto pt-36 sm:px-6 lg:px-8">
+        <div class="max-w-screen-xl px-4 pb-8 mx-auto pt-72 sm:px-6 lg:px-8">
           <div class="max-w-3xl mx-auto text-center">
             <p class="text-4xl font-extrabold sm:text-5xl">
               Bienvenue chez nous
